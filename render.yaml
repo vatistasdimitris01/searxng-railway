@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: searxng-cipher
+    env: docker
+    plan: free
+
+    dockerfilePath: Dockerfile
+
+    autoDeploy: true
+
+    envVars:
+      - key: SEARXNG_SETTINGS_PATH
+        value: /etc/searxng/settings.yml
+
+      - key: SEARXNG_REVERSE_PROXY
+        value: "true"
+
+      - key: PORT
+        value: "8080"
+
+    healthCheckPath: /
