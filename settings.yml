@@ -1,0 +1,25 @@
+use_default_settings: true
+
+general:
+  instance_name: "AI Search API"
+
+server:
+  bind_address: "0.0.0.0"
+  port: 8080
+  base_url: "https://searxng-railway-dr3p.onrender.com/"
+  secret_key: "change_this_to_any_random_string_12345"
+
+search:
+  safe_search: 0
+
+  formats:
+    - html
+    - json
+
+engines:
+  - name: duckduckgo
+  - name: bing
+
+ui:
+  default_locale: en
+  query_in_title: true
