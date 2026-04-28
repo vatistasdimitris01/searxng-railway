@@ -1,0 +1,6 @@
+[botdetection.ip_limit]
+filter_link_local = true
+
+[botdetection.ip_lists]
+block_ip = []
+pass_ip = []
