@@ -6,3 +6,9 @@ services:
     autoDeploy: true
     ports:
       - 8080
+    volumes:
+      - name: searxng-config
+        mountPath: /etc/searxng
+      - name: searxng-logo
+        mountPath: /usr/local/searxng/searx/static/themes/simple/img/searxng.png
+        sourcePath: ./searxng.png
