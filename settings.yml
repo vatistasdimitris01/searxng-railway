@@ -1,7 +1,18 @@
 use_default_settings: true
 
+brand:
+  instance_name: "Cipher"
+  docs_url: false
+  public_instances: false
+  wiki_url: false
+  issue_url: false
+  new_issue_url: false
+
 general:
-  instance_name: "AI Search API"
+  instance_name: "Cipher"
+  donation_url: false
+  contact_url: false
+  privacypolicy_url: false
 
 server:
   bind_address: "0.0.0.0"
@@ -11,15 +22,23 @@ server:
 
 search:
   safe_search: 0
-
   formats:
     - html
     - json
 
 engines:
-  - name: duckduckgo
-  - name: bing
+  - name: google
 
 ui:
   default_locale: en
   query_in_title: true
+  default_theme: simple
+  theme_args:
+    simple_style: light
+  center_alignment: true
+  hotkeys: ""
+  url_formatting: pretty
+  results_on_new_tab: false
+  search_on_category_select: false
+
+categories_as_tabs: {}
